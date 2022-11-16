@@ -13,13 +13,16 @@ let nearest_k = tree.nearest_k(query_point, 3);
 let nearest_neighbor = tree.nearest(query_point);
 ```
 
-`ball` will be an ordered list of objects. Each object contains 
+`ball` will be an ordered list of objects. Each object is structured like `{point: {..., index: 9}, squared_distance: 0.02}` and orderd by squared distance. `nearest_k` has the same structure. `nearest_neighbor` is just the first element of the list from `nearest_k` for `k>0`.
 
 ## How to use
 
 ### p5 example
 
 [p5 demo](https://editor.p5js.org/kimxsegfault/sketches/0--CV4nQn).
+
+https://user-images.githubusercontent.com/10728380/202268588-79b53ec1-4c96-4831-aac2-9304eb4fc501.mov
+
 
 ```javascript
 let points = [];
