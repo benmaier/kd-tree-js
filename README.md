@@ -122,6 +122,7 @@ let nearest_neighbor = tree.nearest(query_point);
             idx: 1
         },
         squared_distance: 0.01
+    }
 ]
 ```
 
